@@ -13,22 +13,22 @@ class ComposerStaticInitded58e30b92a5c313fc32e3f5ef3a67c
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'Wpmoose\\WpDismissibleNotice\\' => 28,
         ),
-        'K' => 
+        'K' =>
         array (
             'KentaBlocks\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Wpmoose\\WpDismissibleNotice\\' => 
+        'Wpmoose\\WpDismissibleNotice\\' =>
         array (
             0 => __DIR__ . '/..' . '/wpmoose/wp-dismissible-notice/src',
         ),
-        'KentaBlocks\\' => 
+        'KentaBlocks\\' =>
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),

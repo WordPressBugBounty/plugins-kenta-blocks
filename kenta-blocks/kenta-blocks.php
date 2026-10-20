@@ -5,7 +5,7 @@
  * Plugin URI: https://kentatheme.com/blocks/
  * Description: Kenta Blocks is a set of responsive blocks with powerful options and pre-designed templates library.
  * Author: WP Moose
- * Version: 1.4.5
+ * Version: 1.4.6
  * Requires at least: 5.6
  * Requires PHP: 7.4
  * License: GPLv3
@@ -28,22 +28,23 @@ if ( function_exists( 'kb_fs' ) ) {
                 // Include Freemius SDK.
                 require_once dirname( __FILE__ ) . '/freemius/start.php';
                 $kb_fs = fs_dynamic_init( array(
-                    'id'             => '10934',
-                    'slug'           => 'kenta-blocks',
-                    'type'           => 'plugin',
-                    'public_key'     => 'pk_79663eeb2916a8f1f4e96f8fdb41f',
-                    'is_premium'     => false,
-                    'premium_suffix' => 'Premium',
-                    'anonymous_mode' => true,
-                    'has_addons'     => false,
-                    'has_paid_plans' => true,
-                    'menu'           => array(
+                    'id'               => '10934',
+                    'slug'             => 'kenta-blocks',
+                    'type'             => 'plugin',
+                    'public_key'       => 'pk_79663eeb2916a8f1f4e96f8fdb41f',
+                    'is_premium'       => false,
+                    'premium_suffix'   => 'Premium',
+                    'anonymous_mode'   => true,
+                    'has_addons'       => false,
+                    'has_paid_plans'   => true,
+                    'menu'             => array(
                         'slug'    => 'kenta-blocks',
                         'pricing' => false,
                         'contact' => true,
                         'support' => true,
                     ),
-                    'is_live'        => true,
+                    'is_live'          => true,
+                    'is_org_compliant' => true,
                 ) );
             }
             return $kb_fs;
@@ -59,7 +60,7 @@ if ( function_exists( 'kb_fs' ) ) {
      *
      * @since 0.0.1
      */
-    define( 'KENTA_BLOCKS_VERSION', '1.4.5' );
+    define( 'KENTA_BLOCKS_VERSION', '1.4.6' );
     define( 'KENTA_BLOCKS_PLUGIN_FILE', __FILE__ );
     define( 'KENTA_BLOCKS_PLUGIN_PATH', trailingslashit( plugin_dir_path( KENTA_BLOCKS_PLUGIN_FILE ) ) );
     define( 'KENTA_BLOCKS_PLUGIN_URL', trailingslashit( plugins_url( '/', KENTA_BLOCKS_PLUGIN_FILE ) ) );
